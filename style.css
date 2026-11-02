@@ -1,0 +1,373 @@
+/* BASIC ELEMENTS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: arial;
+    sans-serif;
+}
+
+html {
+    scroll-behaviour:smooth ;
+}
+
+body{
+    background-color: #1c3e71;
+    color: #222;
+}
+/* navigation bar */
+
+.navbar {
+    background-color: #101c2c;
+    padding: 20px 7%;
+    display: flex;
+    justify-content:
+    space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo span {
+    color: #200b67;
+
+}
+.navbar ul a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.navbar ul a:hover {
+    color: #a3e635;
+
+}
+/* home section */
+
+.hero{
+    min-height: 430px;
+    background: linear-gradiant(
+        90deg,
+        #101c2c,
+        #214f75
+    );
+    display: flex;
+    align-items: center;
+    padding: 50px 10%;
+    color: white;
+}
+
+.hero-content{
+    max-width: 650px;
+}
+
+.tagline{
+    color: #a3e635;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-content > p:not(.tagline)
+{
+    line-height:1.7;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #a3e635
+    color: #101c2c;
+    padding: 14px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-width: bold;
+}
+
+.btn: hover {
+    background-color: white;
+
+}
+
+/* ABOUT SECTION */
+.about {
+    text-align: center;
+    padding: 55px 12%
+
+}
+.about h2 {
+    color: #101c2c;
+    margin-bottom: 20px;
+
+}
+.about p{
+    line-height: 1.8;
+    color: #555;
+
+}
+* COMMON SECTIONS */
+
+.section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.section h2,
+.achievements h2 {
+    font-size: 30px;
+    color: #101c2c;
+    margin-bottom: 15px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 35px;
+}
+
+
+/* SPORTS CARDS */
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    text-align: left;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #101c2c;
+    padding: 15px 15px 5px;
+}
+
+.card p {
+    color: #666;
+    padding: 8px 15px 20px;
+}
+
+
+/* PLAYERS SECTION */
+
+.dark {
+    background-color: #101c2c;
+}
+
+.dark h2 {
+    color: white;
+}
+
+.dark .subtitle {
+    color: #cccccc;
+}
+
+.player-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.player {
+    background-color: #1c3046;
+    color: white;
+    width: 240px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    border: 1px solid #34495e;
+}
+
+.player-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.player h3 {
+    color: #a3e635;
+    margin-bottom: 12px;
+}
+
+.player p {
+    margin-top: 10px;
+    color: #dddddd;
+}
+
+
+/* TOURNAMENT TABLE */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 25px;
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    padding: 16px;
+}
+
+th {
+    background-color: #101c2c;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #eaf0f5;
+}
+
+
+/* ACHIEVEMENTS */
+
+.achievements {
+    background-color: #e8f2dc;
+    text-align: center;
+    padding: 55px 8%;
+}
+
+.achievement-container {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.achievement-container h3 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.achievement-container p {
+    font-weight: bold;
+}
+
+
+/* REGISTRATION FORM */
+
+.registration {
+    background-color: #f1f5f9;
+}
+
+form {
+    max-width: 500px;
+    background-color: white;
+    margin: auto;
+    padding: 30px;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin: 15px 0 8px;
+}
+
+form input:not([type="radio"]):not([type="checkbox"]),
+form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 12px 0;
+    flex-wrap: wrap;
+}
+
+form button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 20px;
+    background-color: #101c2c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: #a3e635;
+    color: #101c2c;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #101c2c;
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+
+footer h2 {
+    color: #a3e635;
+    margin-bottom: 12px;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 650px) {
+
+    .navbar {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .navbar ul {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .section {
+        padding: 40px 5%;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}
